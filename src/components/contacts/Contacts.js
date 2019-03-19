@@ -5,8 +5,11 @@ import PropTypes from "prop-types";
 import { getContacts } from "../../actions/contactAction";
 
 class Contacts extends Component {
+  componentDidMount = () => {
+    this.props.getContacts();
+  };
   render() {
-    const { contacts } = this.state;
+    const { contacts } = this.props;
     return (
       <React.Fragment>
         <h1 className="display-4 mb-2">
@@ -31,5 +34,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  getContacts
+  { getContacts }
 )(Contacts);
