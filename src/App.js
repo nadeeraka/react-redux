@@ -6,12 +6,8 @@ import EditContact from "./components/contacts/EditContact";
 import Header from "./components/layout/Header";
 import About from "./components/pages/About";
 import NotFound from "./components/pages/NotFound";
-<<<<<<< HEAD
-
-=======
 import { Provider } from "react-redux";
 import store from "./store";
->>>>>>> f931993dd24d78beb771f53730404bff27ced839
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
